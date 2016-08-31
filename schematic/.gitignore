@@ -1,0 +1,5 @@
+# EAGLE project files
+*.epf
+
+# EAGLE backup files
+*.s#?
