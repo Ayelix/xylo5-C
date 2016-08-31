@@ -7,7 +7,8 @@ tour in the US.
 ## Contents
 
 * schematic/ - Schematic for the PCB, created by tracing connections visually 
-and with a multimeter.  A PDF version is also included.
+and with a multimeter.  The schematic is very messy because it is laid out to
+match the PCB layout as closely as possible.  A PDF version is also included.
 * PCB/ - Photos of the PCB along with a spreadsheet listing every component on
 the front side of the board and its location (using the photo with a grid for
 reference).
