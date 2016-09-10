@@ -1,7 +1,7 @@
-# Xylobands xylo5-c
+# Xylobands xylo5-C
 
-This repo contains info on the Xylobands LED wristbands which use the xylo5-c
-PCB version.  The xylo5-c is the type used on Coldplay's Head Full of Dreams
+This repo contains info on the Xylobands LED wristbands which use the xylo5-C
+PCB version.  The xylo5-C is the type used on Coldplay's Head Full of Dreams
 tour in the US.
 
 ## Contents
