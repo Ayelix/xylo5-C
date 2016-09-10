@@ -11806,7 +11806,7 @@ the circuit.</text>
 <wire x1="83.82" y1="167.64" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="RST" class="0">
 <segment>
 <pinref part="C16" gate="G$1" pin="1"/>
 <pinref part="SKT6" gate="G$1" pin="2"/>
@@ -11817,6 +11817,7 @@ the circuit.</text>
 <pinref part="IC1" gate="G$1" pin="PC6"/>
 <wire x1="134.62" y1="170.18" x2="116.84" y2="170.18" width="0.1524" layer="91"/>
 <junction x="116.84" y="170.18"/>
+<label x="162.56" y="231.14" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -12183,6 +12184,7 @@ the circuit.</text>
 <wire x1="200.66" y1="210.82" x2="170.18" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="SKT6" gate="G$1" pin="5"/>
 <wire x1="170.18" y1="210.82" x2="170.18" y2="231.14" width="0.1524" layer="91"/>
+<label x="170.18" y="231.14" size="1.778" layer="95" rot="MR270"/>
 </segment>
 </net>
 <net name="PB4_SDO" class="0">
@@ -12194,6 +12196,7 @@ the circuit.</text>
 <wire x1="167.64" y1="231.14" x2="167.64" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="208.28" x2="198.12" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="208.28" x2="198.12" y2="180.34" width="0.1524" layer="91"/>
+<label x="167.64" y="231.14" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="SDO"/>
@@ -12209,6 +12212,7 @@ the circuit.</text>
 <wire x1="165.1" y1="205.74" x2="167.64" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="205.74" x2="167.64" y2="195.58" width="0.1524" layer="91"/>
 <label x="167.64" y="198.12" size="1.778" layer="95"/>
+<label x="165.1" y="231.14" size="1.778" layer="95" rot="MR270"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="SCLK"/>
