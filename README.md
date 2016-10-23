@@ -6,12 +6,14 @@ tour in the US.
 
 ## Contents
 
-* schematic/ - Schematic for the PCB, created by tracing connections visually 
+* [schematic/](./schematic/) - Schematic for the PCB, created by tracing connections visually 
 and with a multimeter.  The schematic is very messy because it is laid out to
 match the PCB layout as closely as possible.  A PDF version is also included.
-* PCB/ - Photos of the PCB along with a spreadsheet listing every component on
+* [PCB/](./PCB) - Photos of the PCB along with a spreadsheet listing every component on
 the front side of the board and its location (using the photo with a grid for
 reference).
+* [startup_behavior/](./startup_behavior/) - Summary of the activity on the xylo5-c
+when power is applied (LED / SPI activity).
 
 ## Stuff Not Included
 
