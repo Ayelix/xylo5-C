@@ -11345,10 +11345,6 @@ Other 2 pads are GND.</text>
 <wire x1="133.985" y1="174.625" x2="132.715" y2="175.895" width="0.1524" layer="97"/>
 <wire x1="132.715" y1="172.085" x2="133.985" y2="173.355" width="0.1524" layer="97"/>
 <wire x1="133.985" y1="172.085" x2="132.715" y2="173.355" width="0.1524" layer="97"/>
-<text x="63.5" y="67.31" size="1.778" layer="97" align="top-left">g
-r
-b
-a</text>
 <text x="166.37" y="31.75" size="1.27" layer="97" align="top-left">This is just my
 BEST GUESS of
 component type.
