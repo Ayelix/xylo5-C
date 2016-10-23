@@ -11,9 +11,8 @@ The SPI traffic is analyzed in this forum thread (and also a separate thread
 linked from this one):
 [http://xylobandhacking.freeforums.net/thread/19/spi-traffic-on-startup](http://xylobandhacking.freeforums.net/thread/19/spi-traffic-on-startup)
 
-The captured data is also included in the SPI directory in case the forum goes
-down:
-[SPI/](./SPI/)
+The captured data is also included in the [SPI/](./SPI/) directory in case the forum goes
+down.
 
 ## LEDs ##
 
