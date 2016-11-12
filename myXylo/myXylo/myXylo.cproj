@@ -30,8 +30,8 @@
       <framework-data>
   <options>
     <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
-    <option id="common.services.basic.gpio" value="Add" config="" content-id="Atmel.ASF" />
     <option id="common.services.delay" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.services.ioport" value="Add" config="" content-id="Atmel.ASF" />
   </options>
   <configurations />
   <files>
@@ -60,8 +60,6 @@
     <file path="src/Config/conf_clock.h" framework="" version="3.32.0" source="common\services\clock\mega\module_config\conf_clock.h" changed="False" content-id="Atmel.ASF" />
     <file path="src/ASF/common/services/delay/mega/cycle_counter.h" framework="" version="3.32.0" source="common\services\delay\mega\cycle_counter.h" changed="False" content-id="Atmel.ASF" />
     <file path="src/ASF/common/services/delay/delay.h" framework="" version="3.32.0" source="common\services\delay\delay.h" changed="False" content-id="Atmel.ASF" />
-    <file path="src/ASF/common/services/gpio/gpio.h" framework="" version="3.32.0" source="common\services\gpio\gpio.h" changed="False" content-id="Atmel.ASF" />
-    <file path="src/ASF/common/services/gpio/mega_gpio/mega_gpio.h" framework="" version="3.32.0" source="common\services\gpio\mega_gpio\mega_gpio.h" changed="False" content-id="Atmel.ASF" />
     <file path="src/ASF/common/services/ioport/ioport.h" framework="" version="3.32.0" source="common\services\ioport\ioport.h" changed="False" content-id="Atmel.ASF" />
     <file path="src/ASF/common/services/ioport/mega/ioport.h" framework="" version="3.32.0" source="common\services\ioport\mega\ioport.h" changed="False" content-id="Atmel.ASF" />
   </files>
@@ -116,7 +114,6 @@
       <Value>../src/ASF/mega/drivers/cpu</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>../src/ASF/common/services/gpio</Value>
       <Value>../src/ASF/common/services/ioport</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
@@ -146,7 +143,6 @@
       <Value>../src/ASF/mega/drivers/cpu</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>../src/ASF/common/services/gpio</Value>
       <Value>../src/ASF/common/services/ioport</Value>
     </ListValues>
   </avrgcc.assembler.general.IncludePaths>
@@ -181,7 +177,6 @@
       <Value>../src/ASF/mega/drivers/cpu</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>../src/ASF/common/services/gpio</Value>
       <Value>../src/ASF/common/services/ioport</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
@@ -212,7 +207,6 @@
       <Value>../src/ASF/mega/drivers/cpu</Value>
       <Value>../src/ASF/common/services/clock</Value>
       <Value>../src/ASF/common/services/delay</Value>
-      <Value>../src/ASF/common/services/gpio</Value>
       <Value>../src/ASF/common/services/ioport</Value>
     </ListValues>
   </avrgcc.assembler.general.IncludePaths>
@@ -296,12 +290,6 @@
     <None Include="src\ASF\common\services\delay\delay.h">
       <SubType>compile</SubType>
     </None>
-    <None Include="src\ASF\common\services\gpio\gpio.h">
-      <SubType>compile</SubType>
-    </None>
-    <None Include="src\ASF\common\services\gpio\mega_gpio\mega_gpio.h">
-      <SubType>compile</SubType>
-    </None>
     <None Include="src\ASF\common\services\ioport\ioport.h">
       <SubType>compile</SubType>
     </None>
@@ -323,8 +311,6 @@
     <Folder Include="src\ASF\common\services\clock\mega\" />
     <Folder Include="src\ASF\common\services\delay\" />
     <Folder Include="src\ASF\common\services\delay\mega\" />
-    <Folder Include="src\ASF\common\services\gpio\" />
-    <Folder Include="src\ASF\common\services\gpio\mega_gpio\" />
     <Folder Include="src\ASF\common\services\ioport\" />
     <Folder Include="src\ASF\common\services\ioport\mega\" />
     <Folder Include="src\ASF\common\utils\" />
