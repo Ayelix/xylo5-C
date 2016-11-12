@@ -11462,7 +11462,9 @@ the circuit.</text>
 <instance part="P+5" gate="VCC" x="223.52" y="-5.08"/>
 <instance part="P+6" gate="VCC" x="154.94" y="233.68"/>
 <instance part="P+1" gate="VCC" x="165.1" y="203.2"/>
-<instance part="P+2" gate="VCC" x="170.18" y="139.7"/>
+<instance part="P+2" gate="VCC" x="170.18" y="139.7" smashed="yes">
+<attribute name="VALUE" x="172.72" y="137.16" size="1.778" layer="96"/>
+</instance>
 <instance part="P+7" gate="G$1" x="195.58" y="-12.7"/>
 <instance part="P+8" gate="G$1" x="220.98" y="66.04"/>
 <instance part="P+9" gate="G$1" x="241.3" y="182.88"/>
@@ -12000,7 +12002,7 @@ the circuit.</text>
 <junction x="307.34" y="15.24"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="PD3_ALL_LEDS" class="0">
 <segment>
 <pinref part="TP7" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -12017,6 +12019,7 @@ the circuit.</text>
 <pinref part="IC1" gate="G$1" pin="PD3"/>
 <wire x1="149.86" y1="144.78" x2="149.86" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="TR2" gate="G$1" pin="G2"/>
+<label x="129.54" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -12045,7 +12048,7 @@ the circuit.</text>
 <wire x1="160.02" y1="58.42" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="PB7_BLUE" class="0">
 <segment>
 <wire x1="151.13" y1="40.64" x2="151.13" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="151.13" y1="43.18" x2="191.77" y2="43.18" width="0.1524" layer="91"/>
@@ -12053,25 +12056,31 @@ the circuit.</text>
 <wire x1="191.77" y1="43.18" x2="191.77" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="191.77" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="TR2" gate="G$1" pin="G1"/>
+<label x="170.18" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="PB6_RED" class="0">
 <segment>
 <wire x1="165.1" y1="110.49" x2="152.4" y2="110.49" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="110.49" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PB6"/>
 <wire x1="165.1" y1="110.49" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="TR1" gate="G$1" pin="G2"/>
+<label x="165.1" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="PC3_GREEN" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC3"/>
-<wire x1="134.62" y1="177.8" x2="129.54" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="177.8" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="58.42" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="177.8" x2="132.08" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="177.8" x2="119.38" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="177.8" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="132.08" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="58.42" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="TR1" gate="G$1" pin="G1"/>
 <wire x1="152.4" y1="58.42" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
+<label x="119.38" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC2_GPIO1" class="0">
@@ -12111,12 +12120,13 @@ the circuit.</text>
 <label x="266.7" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="PD5_TP1" class="0">
 <segment>
 <pinref part="TP1" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PD5"/>
 <wire x1="198.12" y1="153.67" x2="198.12" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="162.56" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
+<label x="185.42" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD6_SDN" class="0">
