@@ -281,9 +281,15 @@
     <None Include="src\ASF\common\services\ioport\mega\ioport.h">
       <SubType>compile</SubType>
     </None>
-    <Compile Include="src\drivers\conf_board.h">
+    <Compile Include="src\drivers\gpio.c">
       <SubType>compile</SubType>
     </Compile>
+    <None Include="src\drivers\gpio.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\drivers\conf_board.h">
+      <SubType>compile</SubType>
+    </None>
     <Compile Include="src\init.c">
       <SubType>compile</SubType>
     </Compile>
