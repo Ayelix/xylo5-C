@@ -30,11 +30,68 @@
  */
 #include <asf.h>
 
+#define delay1us nop
+#define delay10us() { \
+	delay1us(); delay1us(); delay1us(); delay1us(); delay1us(); \
+	delay1us(); delay1us(); delay1us(); delay1us(); delay1us(); \
+}
+#define delay50us() { \
+	delay10us(); delay10us(); delay10us(); delay10us(); delay10us(); \
+}
+#define delay100us() {delay50us(); delay50us(); }
+
+static void delay250us(void) {delay100us(); delay100us(); delay50us();}
+
+static void delay500ms(void)
+{
+	for (uint16_t i = 0; i < 2000; i++)
+	{
+		delay250us();
+	}
+}
+
+#define RED_PULSE()		{RED_ON(); delay250us(); RED_OFF();}
+#define BLUE_PULSE()	{BLUE_ON(); delay250us(); BLUE_OFF();}
+#define GREEN_PULSE()	{GREEN_ON(); delay250us(); GREEN_OFF();}
+
 int main (void)
 {
-	/* Insert system clock initialization code here (sysclk_init()). */
-
 	board_init();
 
-	/* Insert application code here, after the board has been initialized. */
+	while (true)
+	{
+		TP1_TOGGLE();
+
+		LEDS_ENABLE();
+
+		for (uint8_t i = 0; i < 100; i++)
+		{
+			RED_PULSE();
+			delay250us(); // keep green off this time
+			delay250us(); // keep blue off this time
+		}
+
+		delay500ms();
+
+		for (uint8_t i = 0; i < 100; i++)
+		{
+			delay250us(); // keep red off this time
+			GREEN_PULSE();
+			delay250us(); // keep blue off this time
+		}
+
+		delay500ms();
+
+		for (uint8_t i = 0; i < 100; i++)
+		{
+			delay250us(); // keep red off this time
+			delay250us(); // keep green off this time
+			BLUE_PULSE();
+		}
+
+		LEDS_DISABLE();
+
+		delay500ms();
+
+	}
 }
