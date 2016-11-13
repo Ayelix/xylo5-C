@@ -1,33 +1,3 @@
-/**
- * \file
- *
- * \brief Empty user application template
- *
- */
-
-/**
- * \mainpage User Application template doxygen documentation
- *
- * \par Empty user application template
- *
- * Bare minimum empty user application template
- *
- * \par Content
- *
- * -# Include the ASF header files (through asf.h)
- * -# "Insert system clock initialization code here" comment
- * -# Minimal main function that starts with a call to board_init()
- * -# "Insert application code here" comment
- *
- */
-
-/*
- * Include header files for all drivers that have been imported from
- * Atmel Software Framework (ASF).
- */
-/*
- * Support and FAQ: visit <a href="http://www.atmel.com/design-support/">Atmel Support</a>
- */
 #include <asf.h>
 
 #define delay1us nop
@@ -42,9 +12,9 @@
 
 static void delay250us(void) {delay100us(); delay100us(); delay50us();}
 
-static void delay500ms(void)
+static void delay100ms(void)
 {
-	for (uint16_t i = 0; i < 2000; i++)
+	for (uint16_t i = 0; i < 400; i++)
 	{
 		delay250us();
 	}
@@ -58,40 +28,14 @@ int main (void)
 {
 	board_init();
 
-	while (true)
-	{
-		TP1_TOGGLE();
+	// HACK the LEDs module forces full brightness
+	// We have to force the LEDs off and kill interrupts to stop it after a
+	// while so the LEDs aren't on forever.  Just a blink on startup.
+	delay100ms();
+	cli();
+	LEDS_DISABLE();
 
-		LEDS_ENABLE();
-
-		for (uint8_t i = 0; i < 100; i++)
-		{
-			RED_PULSE();
-			delay250us(); // keep green off this time
-			delay250us(); // keep blue off this time
-		}
-
-		delay500ms();
-
-		for (uint8_t i = 0; i < 100; i++)
-		{
-			delay250us(); // keep red off this time
-			GREEN_PULSE();
-			delay250us(); // keep blue off this time
-		}
-
-		delay500ms();
-
-		for (uint8_t i = 0; i < 100; i++)
-		{
-			delay250us(); // keep red off this time
-			delay250us(); // keep green off this time
-			BLUE_PULSE();
-		}
-
-		LEDS_DISABLE();
-
-		delay500ms();
-
-	}
+	// Everything runs on interrupts so we'll just sit here.
+	// TODO can we go into sleep mode or something?
+	while (true);
 }

@@ -193,6 +193,7 @@
       <Value>../src/config</Value>
       <Value>../src/ASF/common/services/ioport</Value>
       <Value>../src/drivers</Value>
+      <Value>../src/leds</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize more (-O2)</avrgcc.compiler.optimization.level>
@@ -290,7 +291,19 @@
     <None Include="src\drivers\conf_board.h">
       <SubType>compile</SubType>
     </None>
+    <None Include="src\drivers\leds_driver.h">
+      <SubType>compile</SubType>
+    </None>
     <Compile Include="src\init.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\leds\leds_driver_interface.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\leds\leds.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\leds\leds.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="src\main.c">
@@ -314,6 +327,7 @@
     <Folder Include="src\ASF\mega\utils\assembler\" />
     <Folder Include="src\ASF\mega\utils\preprocessor\" />
     <Folder Include="src\drivers" />
+    <Folder Include="src\leds" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
