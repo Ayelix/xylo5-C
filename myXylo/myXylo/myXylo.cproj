@@ -247,9 +247,6 @@
     <None Include="src\ASF\common\boards\board.h">
       <SubType>compile</SubType>
     </None>
-    <Compile Include="src\ASF\common\boards\user_board\init.c">
-      <SubType>compile</SubType>
-    </Compile>
     <None Include="src\ASF\common\utils\interrupt\interrupt_avr8.h">
       <SubType>compile</SubType>
     </None>
@@ -286,6 +283,9 @@
     <None Include="src\ASF\common\services\ioport\mega\ioport.h">
       <SubType>compile</SubType>
     </None>
+    <Compile Include="src\init.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\main.c">
       <SubType>compile</SubType>
     </Compile>
